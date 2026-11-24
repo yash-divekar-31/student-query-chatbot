@@ -1,0 +1,352 @@
+{
+  "schema_version": "1.0",
+  "dataset_name": "Student Query Intent Dataset",
+  "college_data_status": "sample_only_no_official_college_data",
+  "intents": [
+    {
+      "intent": "greeting",
+      "category": "Greetings",
+      "trainable": true,
+      "response_status": "generic",
+      "patterns": [
+        "Hello",
+        "Hi there",
+        "Good morning",
+        "Hey, can you help me?"
+      ],
+      "responses": [
+        "Hello! I can help with general student queries. Please ask about admissions, academics, fees, campus services, or another student topic."
+      ]
+    },
+    {
+      "intent": "admission_process",
+      "category": "Admissions",
+      "trainable": true,
+      "response_status": "placeholder",
+      "patterns": [
+        "How do I apply for admission?",
+        "What is the admission process?",
+        "Where can I submit an application to the college?",
+        "Can you explain how to get admitted?"
+      ],
+      "responses": [
+        "SAMPLE PLACEHOLDER: The verified admission process is not available yet. Check the college's official admissions website or contact its admissions office for current instructions."
+      ]
+    },
+    {
+      "intent": "admission_eligibility",
+      "category": "Admissions",
+      "trainable": true,
+      "response_status": "placeholder",
+      "patterns": [
+        "What are the eligibility requirements for admission?",
+        "Am I eligible to apply for a program?",
+        "What qualifications do applicants need?",
+        "Are there any entry requirements for students?"
+      ],
+      "responses": [
+        "SAMPLE PLACEHOLDER: Program eligibility requirements have not been verified. Please consult the official college prospectus or admissions office; requirements may vary by program."
+      ]
+    },
+    {
+      "intent": "application_documents",
+      "category": "Admissions",
+      "trainable": true,
+      "response_status": "placeholder",
+      "patterns": [
+        "Which documents should I submit with my application?",
+        "What paperwork is needed for admission?",
+        "Do I need to upload documents when applying?",
+        "What certificates are required from applicants?"
+      ],
+      "responses": [
+        "SAMPLE PLACEHOLDER: The required application documents have not been confirmed. Refer to the current official application instructions before preparing or submitting documents."
+      ]
+    },
+    {
+      "intent": "application_status",
+      "category": "Admissions",
+      "trainable": true,
+      "response_status": "placeholder",
+      "patterns": [
+        "How can I check my application status?",
+        "Has my admission application been reviewed?",
+        "Where do I track my application?",
+        "I applied already; how do I know the result?"
+      ],
+      "responses": [
+        "SAMPLE PLACEHOLDER: Application tracking details are not available here. Use the official admissions portal or contact the admissions office; do not share passwords or sensitive identity information in this chat."
+      ]
+    },
+    {
+      "intent": "courses_departments",
+      "category": "Courses and departments",
+      "trainable": true,
+      "response_status": "placeholder",
+      "patterns": [
+        "Which courses does the college offer?",
+        "What departments are available?",
+        "Can you list the programs of study?",
+        "I want to know about the academic programs."
+      ],
+      "responses": [
+        "SAMPLE PLACEHOLDER: The official course and department list has not been added. Check the college's official academic catalogue for current programs and availability."
+      ]
+    },
+    {
+      "intent": "fees_payment",
+      "category": "Fees",
+      "trainable": true,
+      "response_status": "placeholder",
+      "patterns": [
+        "Where can I find the tuition fees?",
+        "How do students pay their fees?",
+        "What is the fee structure for my course?",
+        "Is there an official way to make a college payment?"
+      ],
+      "responses": [
+        "SAMPLE PLACEHOLDER: Verified fee amounts and payment instructions are not available. Please use the official fee notice or payment portal. Do not rely on unofficial payment details."
+      ]
+    },
+    {
+      "intent": "scholarships",
+      "category": "Scholarships",
+      "trainable": true,
+      "response_status": "placeholder",
+      "patterns": [
+        "Are scholarships available for students?",
+        "How can I find financial aid information?",
+        "Where do I ask about scholarship applications?",
+        "Can students apply for tuition assistance?"
+      ],
+      "responses": [
+        "SAMPLE PLACEHOLDER: Scholarship availability, eligibility, and deadlines have not been verified. Check official college and government scholarship sources for current information."
+      ]
+    },
+    {
+      "intent": "examinations",
+      "category": "Examinations",
+      "trainable": true,
+      "response_status": "placeholder",
+      "patterns": [
+        "When are the examinations scheduled?",
+        "Where can I find the exam timetable?",
+        "How do I register for an examination?",
+        "Who should I contact about exam rules?"
+      ],
+      "responses": [
+        "SAMPLE PLACEHOLDER: Examination schedules and rules are not available in this sample dataset. Consult the current official examination notice or your academic department."
+      ]
+    },
+    {
+      "intent": "results",
+      "category": "Results",
+      "trainable": true,
+      "response_status": "placeholder",
+      "patterns": [
+        "Where can I check my exam results?",
+        "Have the semester results been published?",
+        "How do students access their grades?",
+        "Who can help if there is a problem with my result?"
+      ],
+      "responses": [
+        "SAMPLE PLACEHOLDER: Result publication and access instructions have not been verified. Use the official student portal or contact the examination office; do not post student credentials here."
+      ]
+    },
+    {
+      "intent": "attendance",
+      "category": "Attendance",
+      "trainable": true,
+      "response_status": "placeholder",
+      "patterns": [
+        "Where can I view my attendance?",
+        "What is the attendance requirement?",
+        "How do I correct an attendance record?",
+        "Who should I ask about missed classes?"
+      ],
+      "responses": [
+        "SAMPLE PLACEHOLDER: Attendance records and policy details have not been provided. Check the official student portal or ask your department about the applicable policy."
+      ]
+    },
+    {
+      "intent": "placements",
+      "category": "Placements",
+      "trainable": true,
+      "response_status": "placeholder",
+      "patterns": [
+        "Does the college have placement support?",
+        "How can I register for placement activities?",
+        "Where can I learn about campus recruitment?",
+        "Who can answer questions about placements?"
+      ],
+      "responses": [
+        "SAMPLE PLACEHOLDER: Placement services and outcomes have not been verified. Contact the official placement or career-services office for current support and published reports."
+      ]
+    },
+    {
+      "intent": "internships",
+      "category": "Internships",
+      "trainable": true,
+      "response_status": "placeholder",
+      "patterns": [
+        "How can I find an internship?",
+        "Does the college share internship opportunities?",
+        "Who can guide me about student internships?",
+        "Where should I submit an internship question?"
+      ],
+      "responses": [
+        "SAMPLE PLACEHOLDER: Internship opportunities and procedures have not been confirmed. Ask the relevant academic department or official career-services office for verified guidance."
+      ]
+    },
+    {
+      "intent": "training_development",
+      "category": "Training and development",
+      "trainable": true,
+      "response_status": "placeholder",
+      "patterns": [
+        "Are there skill development programs for students?",
+        "What training sessions are offered?",
+        "Can I get help preparing for a career?",
+        "Where can I learn about workshops and professional development?"
+      ],
+      "responses": [
+        "SAMPLE PLACEHOLDER: Training, workshops, and development services have not been verified. Check official department or career-services announcements for current programs."
+      ]
+    },
+    {
+      "intent": "campus_facilities",
+      "category": "College facilities",
+      "trainable": true,
+      "response_status": "placeholder",
+      "patterns": [
+        "What facilities are available on campus?",
+        "Can you tell me about student services?",
+        "Does the college have spaces for student activities?",
+        "Where can I find information about campus facilities?"
+      ],
+      "responses": [
+        "SAMPLE PLACEHOLDER: The campus facility list has not been verified. Please consult the college's official campus information or student-services office."
+      ]
+    },
+    {
+      "intent": "library",
+      "category": "Library",
+      "trainable": true,
+      "response_status": "placeholder",
+      "patterns": [
+        "What library services are available?",
+        "How can I find the library opening hours?",
+        "Can students borrow books from the library?",
+        "Where do I ask about library access?"
+      ],
+      "responses": [
+        "SAMPLE PLACEHOLDER: Library hours, access rules, and services are not confirmed. Check the official library page or contact library staff for current information."
+      ]
+    },
+    {
+      "intent": "hostel",
+      "category": "Hostel",
+      "trainable": true,
+      "response_status": "placeholder",
+      "patterns": [
+        "Is student hostel accommodation available?",
+        "How can I ask about hostel rooms?",
+        "Where can I find hostel application information?",
+        "Who handles student accommodation questions?"
+      ],
+      "responses": [
+        "SAMPLE PLACEHOLDER: Hostel availability, charges, and application rules have not been verified. Contact the official accommodation office for current details."
+      ]
+    },
+    {
+      "intent": "transportation",
+      "category": "Transportation",
+      "trainable": true,
+      "response_status": "placeholder",
+      "patterns": [
+        "Is there student transport to campus?",
+        "Where can I find the college bus routes?",
+        "How do I ask about transportation services?",
+        "Does the college provide a shuttle service?"
+      ],
+      "responses": [
+        "SAMPLE PLACEHOLDER: Campus transportation routes, availability, and costs are not confirmed. Please check with the official transport office."
+      ]
+    },
+    {
+      "intent": "contact_information",
+      "category": "Contact information",
+      "trainable": true,
+      "response_status": "placeholder",
+      "patterns": [
+        "How do I contact the college?",
+        "Where can I find official department contact details?",
+        "Who should I contact with a student question?",
+        "Can you give me the college office phone number?"
+      ],
+      "responses": [
+        "SAMPLE PLACEHOLDER: Verified phone numbers, email addresses, and office locations have not been provided. Use the contact page on the college's official website."
+      ]
+    },
+    {
+      "intent": "academic_calendar",
+      "category": "Academic calendar",
+      "trainable": true,
+      "response_status": "placeholder",
+      "patterns": [
+        "Where can I find the academic calendar?",
+        "When does the next term begin?",
+        "Are the class and holiday dates published?",
+        "How do I check important academic dates?"
+      ],
+      "responses": [
+        "SAMPLE PLACEHOLDER: The academic calendar and term dates have not been verified. Check the current official calendar published by the college."
+      ]
+    },
+    {
+      "intent": "general_faq",
+      "category": "General FAQs",
+      "trainable": true,
+      "response_status": "placeholder",
+      "patterns": [
+        "Where can I find official information for students?",
+        "How do I get help with a general college question?",
+        "Is there a student information portal?",
+        "What is the best place to check college announcements?"
+      ],
+      "responses": [
+        "SAMPLE PLACEHOLDER: General student information has not been added yet. Please check the college's official website or contact the relevant student-services office."
+      ]
+    },
+    {
+      "intent": "goodbye",
+      "category": "Greetings",
+      "trainable": true,
+      "response_status": "generic",
+      "patterns": [
+        "Goodbye",
+        "Thanks, that is all",
+        "I will go now",
+        "See you later"
+      ],
+      "responses": [
+        "Thank you for chatting. Please verify college-specific information through official college sources. Goodbye!"
+      ]
+    },
+    {
+      "intent": "fallback",
+      "category": "Fallback",
+      "trainable": false,
+      "response_status": "generic",
+      "patterns": [
+        "I have a question about something else",
+        "That is not what I meant",
+        "Can you help with a topic outside those areas?",
+        "I do not know which student topic to choose"
+      ],
+      "responses": [
+        "I am not sure how to help with that yet. Try asking about admissions, courses, fees, exams, student services, placements, or contact information. College-specific details should be confirmed through official sources."
+      ]
+    }
+  ]
+}
