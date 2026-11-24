@@ -78,6 +78,11 @@ There is only one holdout example per intent, so a single example completely
 determines each per-intent score. This small, synthetic dataset does not
 support a claim of production performance.
 
+For a baseline comparison, a `DummyClassifier(strategy="most_frequent")`
+trained on the same 66-example training partition measured 0.0455 accuracy
+on the 22-example holdout. The corresponding macro precision was 0.0021,
+macro recall 0.0455, and macro F1 0.0040.
+
 The 0.065 threshold accepted 13 of the 22 holdout queries; 6 of those
 top-label predictions were correct. A correctly labeled fee question scored
 0.0548 and was sent to fallback. A holdout training/development question

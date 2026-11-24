@@ -67,11 +67,26 @@ ChatBot/
 |-- docs/
 |   |-- chat-api.md
 |   |-- dataset-guide.md
+|   |-- deployment.md
+|   |-- demo-script.md
 |   |-- demo-guide.md
-|   |-- nlp-pipeline.md
+|   |-- demo-storyboard.md
+|   |-- evaluation/
+|   |   |-- model_evaluation.json
+|   |   |-- per_class_metrics.csv
+|   |   `-- confusion_matrix.png
+|   |-- nlp-pipeline.md        # Evaluation procedure and interpretation
+|   |-- screenshots/
+|   |   |-- main-interface.png
+|   |   |-- successful-response.png
+|   |   |-- fallback-response.png
+|   |   |-- mobile-interface.png
+|   |   `-- README.md          # Screenshot capture guide
 |   |-- system-architecture.md
 |   |-- testing-guide.md
 |   `-- user-guide.md
+|-- render.yaml                # Render backend service configuration
+|-- vercel.json                # Vercel SPA routing configuration
 |-- backend/
 |   |-- app/
 |   |   |-- api/                 # FastAPI route handlers
@@ -230,6 +245,59 @@ results.
   page reloads, and there is no database or user authentication.
 - The classifier matches intent patterns; it does not generate answers or
   understand questions like a human.
+
+## Screenshots
+
+The images below were captured from the running application:
+
+### Main interface
+
+![Welcome view and suggested questions](docs/screenshots/main-interface.png)
+
+### Successful response
+
+![Admission question and returned placeholder answer](docs/screenshots/successful-response.png)
+
+### Fallback response
+
+![Fallback behavior for an unfamiliar query](docs/screenshots/fallback-response.png)
+
+### Mobile interface
+
+![Chat interface at a narrow mobile viewport](docs/screenshots/mobile-interface.png)
+
+The screenshot capture procedure is documented in
+[docs/screenshots/README.md](docs/screenshots/README.md).
+
+## Deployment preparation
+
+The prepared deployment targets are **Render** for FastAPI and **Vercel** for
+the React/Vite frontend:
+
+- `render.yaml` contains the backend build/start configuration.
+- `vercel.json` contains the Vite SPA fallback configuration.
+- `backend/.env.example` and `frontend/.env.example` document environment
+  variables without secrets.
+- [Deployment guide](docs/deployment.md) lists the remaining account and URL
+  steps.
+
+The project has not been deployed unless a live health URL is verified. No live
+URLs are claimed in this repository.
+
+## Model evaluation outputs
+
+The fixed holdout workflow writes:
+
+- [Model evaluation JSON](docs/evaluation/model_evaluation.json)
+- [Per-class metrics CSV](docs/evaluation/per_class_metrics.csv)
+- [Confusion matrix](docs/evaluation/confusion_matrix.png)
+
+The JSON and CSV files contain measured results only. Retrain and evaluate with:
+
+```powershell
+Set-Location .\backend
+.\.venv\Scripts\python.exe -m training.train_model
+```
 
 ## Future enhancements
 
